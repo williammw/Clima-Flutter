@@ -1,12 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:clima/utilities/constants.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:http/http.dart';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+import 'package:clima/screens/location_screen.dart';
 
 class LocationScreen extends StatefulWidget {
   @override
   _LocationScreenState createState() => _LocationScreenState();
 }
 
+//
 class _LocationScreenState extends State<LocationScreen> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
